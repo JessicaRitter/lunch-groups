@@ -15,7 +15,6 @@ def show_page():
 @app.route('/names', methods=["POST"])
 def show_names():
     names = request.form.get("names")
-    print names
     names = names.split(' ')
     num_emps = len(names)
     groups = create_groups(num_emps)
