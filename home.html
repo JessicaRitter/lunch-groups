@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lunch Group Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<div class="contianer">
+    <div class="row">
+        <div class="col-lg-4 col-sm-4 col-xs-12"></div>
+        <div class="col-lg-4 col-sm-4 col-xs-12" id="names">
+            <form action="/names" method="POST">
+                <p>Input space separated employee names here:</p>
+                <input type="text" name="names">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12"></div>
+    </div>
+</div>
+</body>
