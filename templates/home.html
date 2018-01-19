@@ -3,20 +3,23 @@
 <head>
     <title>Lunch Group Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main.css">
 </head>
 <body>
 <div class="contianer">
     <div class="row">
-        <div class="col-lg-4">
+        <h1 align="center">Create Lunch Groups of 5s, 4s, and 3s</h1>
+        <div class="col-lg-4 col-sm-4 col-xs-12"></div>
+        <div class="col-lg-4 col-sm-4 col-xs-12">
             <form action="/names" method="POST">
+                <p>Type space separated names of employees here:</p>
+                <input type="text" name="names">
                 <br>
-                <p>Names:</p>
-                <input type="text" name="names" id="names"></input>
                 <br>
-                <button class="btn btn-primary" type="submit">Submit</button>
-                
+                <button class="btn btn-primary" type="submit">Create Lunch Groups</button>
             </form>
         </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12"></div>
     </div>
 </div>
 </body>
