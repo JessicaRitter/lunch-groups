@@ -5,7 +5,7 @@ To have this app running on your local computer, please follow the below steps:
 
 Clone repository:
 ```
-$ git clone https://github.com/JessicaRitter/reciMe.git
+$ git clone https://github.com/JessicaRitter/lunch-groups.git
 ```
 Create a virtual environment:
 ```
