@@ -13,18 +13,11 @@
             <h2> Lunch Groups</h2>
             {% for employee_group in employee_groups %}
             <p> Group: {% for name in employee_group %}
-                    {% if loop.first %} 
-                        {{ name }}
-                    {% endif %} 
                 {{name}} 
                {% endfor %}<p>
             {% endfor %}
             <p>Size Groups: {% for group in groups %}
-                {% if loop.last %}
-                    {{ group }}
-                {% endif %}
              {{group}}, 
-                }
             {% endfor %}</p>
             
         </div>
