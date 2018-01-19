@@ -45,7 +45,7 @@ def create_groups(num_employees):
     find_group_sizes(left=num_employees, results=results)
     return results
 
-# group_sizes = create_groups(26)
+# group_sizes = create_groups(5)
 
 
 
@@ -59,7 +59,7 @@ def create_group(group_sizes, employees):
     for num in group_sizes:
         #create group
         group = []
-        for person in range(num -1):
+        for person in range(num):
             #pop off an employee to add to group, this is also where you could use random sample of group size to randomize
             group.append(employees.pop())
         result_group.append(group)
