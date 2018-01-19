@@ -1,10 +1,11 @@
 from flask import Flask, render_template, redirect, request, session
 from apartmentlist import create_group, create_groups, find_group_sizes
+import os
 import jinja2
 
 app = Flask(__name__)
 
-app.secret_key = "APP_KEY"
+app.secret_key = os.environ.get("APP_KEY")
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -38,5 +39,7 @@ def show_names():
 
 if __name__ == "__main__":
     
-    app.run(host="0.0.0.0", port=5000)
+    PORT = int(os.environ.get("PORT", 5000))
+
+    app.run(host="0.0.0.0", port=PORT)
 
