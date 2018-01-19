@@ -12,9 +12,20 @@
         <div class="col-lg-4 col-sm-4 col-xs-12" id="groups">
             <h2> Lunch Groups</h2>
             {% for employee_group in employee_groups %}
-            <p> Group: {% for name in employee_group %} {{name}}, {% endfor %}<p>
+            <p> Group: {% for name in employee_group %}
+                    {% if loop.first %} 
+                        {{ name }}
+                    {% endif %} 
+                {{name}} 
+               {% endfor %}<p>
             {% endfor %}
-            <p>Size Groups: {% for group in groups %} {{group}}, {% endfor %}</p>
+            <p>Size Groups: {% for group in groups %}
+                {% if loop.last %}
+                    {{ group }}
+                {% endif %}
+             {{group}}, 
+                }
+            {% endfor %}</p>
             
         </div>
         <div class="col-lg-4 col-sm-4 col-xs-12"></div>
