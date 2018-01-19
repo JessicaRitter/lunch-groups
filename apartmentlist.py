@@ -6,7 +6,6 @@ def find_group_sizes(left, results):
     group3 = 3
     #if we've reached zero, exit returning anything passed through results
     if left == 0:
-        print "zero left"
         return results
     #if exactly 5 are left, make a group of 5 and return results with last group appended
     elif left == 5:
@@ -14,14 +13,12 @@ def find_group_sizes(left, results):
         return results
     #if we have 4 left, make a grouop of 4 and append that to the list of results
     elif left == 4:
-        print "four left"
         left = left - 4
         results.append(group4)
         return results
     #if we have three left, make a group of three and add to results, return
     elif left == 3:
         left = left - 3
-        print "three left"
         results.append(group3)
         return results
     #if we have 2 left, start stealing from the last group size
@@ -48,7 +45,7 @@ def create_groups(num_employees):
     find_group_sizes(left=num_employees, results=results)
     return results
 
-group_sizes = create_groups(26)
+# group_sizes = create_groups(26)
 
 
 
@@ -89,7 +86,7 @@ employees= ['Pa Rigsby',
 'Nicole Berlin',
 'Marge Appleberry']
 
-print create_group(group_sizes, employees)
+# print create_group(group_sizes, employees)
     
 
 
